@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Google Fonts */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.mobile-number-field[type="number"]::-webkit-outer-spin-button,
+.mobile-number-field[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
