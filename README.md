@@ -1,12 +1,98 @@
-# React + Vite
+# 🎵 Distro Bird
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [https://tahsin-distro-bird.netlify.app](https://tahsin-distro-bird.netlify.app)
 
-Currently, two official plugins are available:
+**Distro Bird** is a modern music distribution landing page built using React, Tailwind CSS, and Vite. Designed for artists, music labels, or distribution services, the platform is fast, responsive, and beautifully styled to deliver a smooth user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19**
+- **Vite** – Lightning-fast dev environment
+- **Tailwind CSS v4 + DaisyUI** – Utility-first CSS with stylish UI components
+- **React Router v7** – Seamless client-side routing
+- **Moment.js** – Date and time utilities
+- **React Datepicker** – Friendly date inputs
+- **React Icons** – Icon library
+- **Country List** – Country dropdowns made easy
+
+---
+
+## 📦 Project Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/distro-bird.git
+cd distro-bird
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start development server
+
+```bash
+npm run dev
+```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+### 5. Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## 🧩 Folder Structure
+
+```
+distro-bird/
+├── public/             # Static assets
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Page components
+│   ├── App.jsx         # App root
+│   └── main.jsx        # React DOM render entry
+├── tailwind.config.js  # Tailwind CSS config
+├── vite.config.js      # Vite config
+└── package.json        # Project metadata
+```
+
+---
+
+## ✨ Features
+
+- 🎧 Beautiful responsive UI for music platforms
+- 🌍 Country selector integration
+- 📅 Date picker for scheduling releases or events
+- ⚡ Fast performance with Vite
+- 🧑‍🎤 Built with modern React best practices
+
+---
+
+## 👤 Author
+
+**Tahsinul Islam**  
+📫 [tahsinislam974@gmail.com](mailto:tahsinislam974@gmail.com)  
+📍 Mirpur-1, Dhaka 1216
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+> 🎉 Thank you for checking out Distro Bird! Feel free to contribute, fork, or star the repo.
