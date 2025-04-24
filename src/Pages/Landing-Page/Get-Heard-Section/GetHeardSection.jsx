@@ -30,9 +30,9 @@ const GetHeardSection = () => {
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
   return (
-    <div className="bg-[#101729] text-white">
-      <div className="hero   min-h-screen">
-        <div className="grid xl:grid-cols-2 lg:grid-cols-2 gap-4 items-center justify-items-center-safe ">
+    <div className="bg-[#101729] text-white ">
+      <div className="hero   min-h-screen overflow-hidden">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 xl:gap-4 lg:gap-4 gap-y-9 items-center justify-items-center-safe pb-20 pt-16">
           <div className="space-y-3 max-w-lg px-4">
             <h1 className="text-5xl poppins-bold ">Get heard</h1>
             <div className="text-sm">

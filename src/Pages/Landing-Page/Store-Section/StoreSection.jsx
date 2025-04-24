@@ -65,22 +65,22 @@ const StoreSection = () => {
             ref={row1Ref}
             className="flex transition-transform duration-300 will-change-transform  items-center gap-10 "
           >
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img1} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img2} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img3} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img4} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img5} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex ">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img6} alt="" />
             </li>
           </ul>
@@ -88,22 +88,22 @@ const StoreSection = () => {
             ref={row2Ref}
             className="flex transition-transform duration-300 will-change-transform  items-center gap-10 ms-20"
           >
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img7} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img8} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img9} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img10} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img11} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex ">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex ">
               <img className="w-[300px] h-[100px]" src={img12} alt="" />
             </li>
           </ul>
@@ -111,22 +111,22 @@ const StoreSection = () => {
             ref={row3Ref}
             className="flex transition-transform duration-500 will-change-transform  items-center gap-10 ms-36"
           >
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img13} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img14} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img15} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img16} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img17} alt="" />
             </li>
-            <li className="w-[360px] h-[148px] rounded-md px-5   bg-[#101729] items-center flex ">
+            <li className="w-[360px] h-[148px] rounded-md p-16   bg-[#19233a] items-center flex">
               <img className="w-[300px] h-[100px]" src={img6} alt="" />
             </li>
           </ul>
@@ -134,7 +134,7 @@ const StoreSection = () => {
       </div>
       {/* Store Section Content Content */}
 
-      <div className="hero  absolute bottom-0 bg-[#101729]/50 h-full">
+      <div className="hero  absolute bottom-0 bg-[#101729]/70 h-full">
         <div className="xl:w-5xl lg:w-5xl max-w-5xl flex justify-start">
           <div className="px-4">
             <h1 className="text-5xl poppins-bold">More stores</h1>
