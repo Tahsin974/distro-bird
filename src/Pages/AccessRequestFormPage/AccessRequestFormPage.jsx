@@ -6,8 +6,10 @@ import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment";
 
 const AccessRequestFormPage = () => {
+  const [paymentDetails, setPaymentDetails] = useState("");
   const [startDate, setStartDate] = useState();
   const [isOpen, setIsOpen] = useState(false);
+
   const handleChange = (e) => {
     setIsOpen(!isOpen);
     setStartDate(e);
@@ -32,15 +34,15 @@ const AccessRequestFormPage = () => {
     <div>
       <Pagetitle>Get Started</Pagetitle>
       <div className="hero bg-[#101729] text-white  min-h-screen">
-        <div className="hero-content px-2 xl:pt-20 pb-20 lg:pt-20 pt-20">
-          <form className="fieldset grid lg:grid-cols-2 gap-4">
-            <div className="lg:col-span-2 grid lg:grid-cols-2 gap-4">
+        <div className="hero-content px-2 xl:pt-20 pb-20 lg:pt-20 pt-20 max-w-4xl mx-auto">
+          <form className="fieldset grid xl:grid-cols-2 lg:grid-cols-2 gap-4">
+            <div className="xl:col-span-2 lg:col-span-2 grid xl:grid-cols-2 lg:grid-cols-2 gap-4">
               {/* 
               ----------------------Email--------------------
               
               */}
-              <div className="lg:col-span-2">
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+              <div className="xl:col-span-2 lg:col-span-2">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Email <span className="text-rose-600">*</span>
                 </label>
                 <input
@@ -53,8 +55,8 @@ const AccessRequestFormPage = () => {
               --------------------Phone Number--------------------
               
               */}
-              <div className="lg:col-span-2">
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+              <div className="xl:col-span-2 lg:col-span-2">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Phone/Mobile <span className="text-rose-600">*</span>
                 </label>
                 <input
@@ -68,7 +70,7 @@ const AccessRequestFormPage = () => {
               
               */}
               <div>
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   First Name <span className="text-rose-600">*</span>
                 </label>
                 <input
@@ -82,7 +84,7 @@ const AccessRequestFormPage = () => {
               
               */}
               <div>
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Last Name <span className="text-rose-600">*</span>
                 </label>
                 <input
@@ -95,8 +97,8 @@ const AccessRequestFormPage = () => {
               ------------------Date Of Birth-------------------
               
               */}
-              <div className="lg:col-span-2">
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+              <div className="xl:col-span-2 lg:col-span-2">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Date Of Birth <span className="text-rose-600">*</span>
                 </label>
                 <input
@@ -120,8 +122,8 @@ const AccessRequestFormPage = () => {
               ---------------Identification Number----------------
               
               */}
-              <div className="lg:col-span-2">
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+              <div className="xl:col-span-2 lg:col-span-2">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Identification Number
                   <span className="text-rose-600">*</span>
                 </label>
@@ -135,8 +137,8 @@ const AccessRequestFormPage = () => {
               ---------------Upload File----------------
               
               */}
-              <div className="lg:col-span-2">
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+              <div className="xl:col-span-2 lg:col-span-2">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Upload You Identification Document
                   <span className="text-rose-600">*</span>
                 </label>
@@ -155,17 +157,17 @@ const AccessRequestFormPage = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-2">
-              <h1 className="lg:text-2xl md:text-2xl sm:text-xl text-lg my-2">
+            <div className="xl:col-span-2 lg:col-span-2">
+              <h1 className="xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg my-2">
                 Address
               </h1>
               {/* 
               ---------------Street Address----------------
               
               */}
-              <div className="grid lg:grid-cols-2 gap-4">
+              <div className="grid xl:grid-cols-2 lg:grid-cols-2 gap-4">
                 <div>
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     Street Address
                     <span className="text-rose-600">*</span>
                   </label>
@@ -180,7 +182,7 @@ const AccessRequestFormPage = () => {
               
               */}
                 <div>
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     City
                     <span className="text-rose-600">*</span>
                   </label>
@@ -195,7 +197,7 @@ const AccessRequestFormPage = () => {
               
               */}
                 <div>
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     State
                     <span className="text-rose-600">*</span>
                   </label>
@@ -210,7 +212,7 @@ const AccessRequestFormPage = () => {
               
               */}
                 <div>
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     Zip Code
                     <span className="text-rose-600">*</span>
                   </label>
@@ -224,8 +226,8 @@ const AccessRequestFormPage = () => {
               -------------------------Country--------------------
               
               */}
-                <div className="lg:col-span-2">
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <div className="xl:col-span-2 lg:col-span-2">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     Country
                     <span className="text-rose-600">*</span>
                   </label>
@@ -245,8 +247,8 @@ const AccessRequestFormPage = () => {
               ----------------------Are You-----------------------
               
               */}
-                <div className="lg:col-span-2">
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <div className="xl:col-span-2 lg:col-span-2">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     Are You
                     <span className="text-rose-600">*</span>
                   </label>
@@ -265,8 +267,8 @@ const AccessRequestFormPage = () => {
               ----------------Your Artist Name-----------------
               
               */}
-                <div className="lg:col-span-2">
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <div className="xl:col-span-2 lg:col-span-2">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     YOUR NAME (ARTIST, BAND, LABEL){" "}
                     <span className="text-rose-600">*</span>
                   </label>
@@ -280,8 +282,8 @@ const AccessRequestFormPage = () => {
               ----------------MAIN MUSIC GENRE-----------------
               
               */}
-                <div className="lg:col-span-2">
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <div className="xl:col-span-2 lg:col-span-2">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     MAIN MUSIC GENRE
                     <span className="text-rose-600">*</span>
                   </label>
@@ -311,8 +313,8 @@ const AccessRequestFormPage = () => {
               ----------------CURRENT DISTRIBUTOR-----------------
               
               */}
-                <div className="lg:col-span-2">
-                  <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <div className="xl:col-span-2 lg:col-span-2">
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                     CURRENT DISTRIBUTOR
                   </label>
                   <select
@@ -355,7 +357,7 @@ const AccessRequestFormPage = () => {
               ----------------CheckBox-----------------
               
               */}
-            <div className="lg:col-span-2 space-y-5">
+            <div className="xl:col-span-2 lg:col-span-2 space-y-5">
               <p className="text-lg poppins-regular">
                 If you are currently working with a distributor and would like
                 to understand why you would not continue working with them at
@@ -408,7 +410,7 @@ const AccessRequestFormPage = () => {
               
               */}
               <div>
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   NUMBER OF TRACK RELEASED (ALL ALBUMS, EP, SINGLES)
                 </label>
                 <select
@@ -427,7 +429,7 @@ const AccessRequestFormPage = () => {
               
               */}
               <div>
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   TOTAL MONTHLY LISTENERS ON KEY STREAMING PLATFORMS
                   <span className="text-rose-600">*</span>
                 </label>
@@ -447,16 +449,18 @@ const AccessRequestFormPage = () => {
               --------Bank Account Information-------------
               
               */}
-            <div className="lg:col-span-2">
-              <h1 className="lg:text-2xl md:text-2xl sm:text-xl text-lg my-2">
+            <div className="xl:col-span-2 lg:col-span-2 space-y-5">
+              <h1 className="xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg my-2">
                 Bank Account Information's
               </h1>
               <div>
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Payout via <span className="text-rose-600">*</span>
                 </label>
                 <select
                   id="country"
+                  value={paymentDetails}
+                  onChange={(e) => setPaymentDetails(e.target.value)}
                   className="select xl:select-xl lg:select-lg md:select-md select-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white"
                 >
                   <option value="">- Select -</option>
@@ -464,13 +468,106 @@ const AccessRequestFormPage = () => {
                   <option>Payoneer</option>
                 </select>
               </div>
+              <div
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                  paymentDetails === "Payoneer"
+                    ? "max-h-[500px] opacity-100 my-4"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                  Payoneer Email <span className="text-rose-600">*</span>
+                </label>
+                <input
+                  type="email"
+                  className="input xl:input-xl lg:input-lg md:input-md input-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white"
+                  placeholder="Enter your Payoneer email"
+                />
+              </div>
+              <div
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                  paymentDetails === "Bank"
+                    ? "max-h-[500px] opacity-100 my-4"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <div>
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                    Account Holder Name <span className="text-rose-600">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="input xl:input-xl lg:input-lg md:input-md input-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white"
+                  />
+                </div>
+                <div>
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                    Account Type
+                    <span className="text-rose-600">*</span>
+                  </label>
+                  <select className="select xl:select-xl lg:select-lg md:select-md select-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white">
+                    <option value="">- Select -</option>
+
+                    <option>Current Account</option>
+                    <option>Saving Account</option>
+                    <option>Checking Account</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                    Bank Account Number (IBAN){" "}
+                    <span className="text-rose-600">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="input xl:input-xl lg:input-lg md:input-md input-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white"
+                  />
+                </div>
+                <div>
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                    Swift Code | Bank Identifier Code (BIC){" "}
+                    <span className="text-rose-600">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="input xl:input-xl lg:input-lg md:input-md input-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white"
+                  />
+                </div>
+                <div>
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                    Bank Name <span className="text-rose-600">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="input xl:input-xl lg:input-lg md:input-md input-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white"
+                  />
+                </div>
+                <div>
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                    Branch Name <span className="text-rose-600">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="input xl:input-xl lg:input-lg md:input-md input-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white"
+                  />
+                </div>
+                <div>
+                  <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                    Bank Routing No. <span className="text-rose-600">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="input xl:input-xl lg:input-lg md:input-md input-sm w-full  bg-gray-800 focus:bg-[#102E32] text-white"
+                  />
+                </div>
+              </div>
 
               {/* 
               ----------------URL Fields-----------------
               
               */}
               <div>
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Facebook
                   <span className="text-rose-600">*</span>
                 </label>
@@ -481,7 +578,7 @@ const AccessRequestFormPage = () => {
                 />
               </div>
               <div>
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   YouTube Channel ID
                   <span className="text-rose-600">*</span>
                 </label>
@@ -492,7 +589,7 @@ const AccessRequestFormPage = () => {
                 />
               </div>
               <div>
-                <label className="fieldset-label text-white mb-4 lg:text-2xl md:text-2xl sm:text-xl text-lg">
+                <label className="fieldset-label text-white mb-4 xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-lg">
                   Spotify URL
                   <span className="text-rose-600">*</span>
                 </label>
@@ -503,7 +600,7 @@ const AccessRequestFormPage = () => {
                 />
               </div>
             </div>
-            <div className="lg:col-span-2">
+            <div className="xl:col-span-2 lg:col-span-2">
               <label className="flex items-center space-x-2">
                 <input
                   type="checkbox"
@@ -516,7 +613,7 @@ const AccessRequestFormPage = () => {
                 </span>
               </label>
 
-              <button className="btn lg:col-span-2 bg-blue-700 border-blue-700 hover:bg-green-700 hover:border-green-700 shadow-none mt-4  text-white">
+              <button className="btn xl:col-span-2 lg:col-span-2 bg-blue-700 border-blue-700 hover:bg-green-700 hover:border-green-700 shadow-none mt-4  text-white">
                 Submit Form
               </button>
             </div>

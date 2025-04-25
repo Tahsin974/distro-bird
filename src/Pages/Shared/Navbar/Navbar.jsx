@@ -18,10 +18,9 @@ const Navbar = ({ children }) => {
     <>
       <li>
         <a
-          href="/home"
           className={`duration-200 hover:bg-white hover:text-black rounded-lg lg:px-3 lg:py-2 py-3 px-4 `}
         >
-          Home
+          Features
         </a>
       </li>
       <li>
@@ -29,7 +28,7 @@ const Navbar = ({ children }) => {
           href="#"
           className={` duration-200 hover:bg-white hover:text-black rounded-lg lg:px-3 lg:py-2 py-3 px-4`}
         >
-          About
+          Products
         </a>
       </li>
       <li>
@@ -37,7 +36,15 @@ const Navbar = ({ children }) => {
           href="#"
           className={` duration-200 hover:bg-white hover:text-black rounded-lg lg:px-3 lg:py-2 py-3 px-4`}
         >
-          Blogs
+          Resources
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          className={` duration-200 hover:bg-white hover:text-black rounded-lg lg:px-3 lg:py-2 py-3 px-4`}
+        >
+          Pricing
         </a>
       </li>
     </>
