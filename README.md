@@ -64,7 +64,6 @@ distro-bird/
 │   ├── pages/          # Page components
 │   ├── App.jsx         # App root
 │   └── main.jsx        # React DOM render entry
-├── tailwind.config.js  # Tailwind CSS config
 ├── vite.config.js      # Vite config
 └── package.json        # Project metadata
 ```
