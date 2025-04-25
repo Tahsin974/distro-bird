@@ -487,7 +487,7 @@ const AccessRequestFormPage = () => {
               <div
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${
                   paymentDetails === "Bank"
-                    ? "max-h-[500px] opacity-100 my-4"
+                    ? "max-h-full opacity-100 my-4"
                     : "max-h-0 opacity-0"
                 }`}
               >
